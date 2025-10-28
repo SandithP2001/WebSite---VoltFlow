@@ -1761,7 +1761,7 @@
                   data-aos-delay="400">
                   <i class="bi bi-envelope"></i>
                   <h3>Email Us</h3>
-                  <p>cdap@sliit.lk</p>
+                  <p>sandithpivithuru@gmail.com</p>
                 </div>
               </div><!-- End Info Item -->
 
@@ -1769,39 +1769,58 @@
           </div>
 
           <div class="col-lg-6">
-            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up"
-              data-aos-delay="500">
+            <form name="contact" method="POST" data-netlify="true" netlify>
+              <input type="hidden" name="form-name" value="contact">
               <div class="row gy-4">
-
                 <div class="col-md-6">
-                  <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                  <input type="text" name="name" class="form-control" placeholder="Your Name" required>
                 </div>
-
-                <div class="col-md-6 ">
-                  <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+                <div class="col-md-6">
+                  <input type="email" name="email" class="form-control" placeholder="Your Email" required>
                 </div>
-
                 <div class="col-md-12">
-                  <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+                  <input type="text" name="subject" class="form-control" placeholder="Subject" required>
                 </div>
-
                 <div class="col-md-12">
-                  <textarea class="form-control" name="message" rows="4" placeholder="Message" required=""></textarea>
+                  <textarea name="message" class="form-control" rows="4" placeholder="Message" required></textarea>
                 </div>
-
                 <div class="col-md-12 text-center">
-                  <button type="submit">Send Message to our Email</button>
+                  <button type="submit">Send Message</button>
                 </div>
-
               </div>
             </form>
-          </div><!-- End Contact Form -->
 
-        </div>
+
+          </div>
+          </form>
+        </div><!-- End Contact Form -->
+
+      </div>
 
       </div>
 
     </section><!-- /Contact Section -->
+
+
+    <!-- Newsletter Section -->
+    <section id="newsletter" class="newsletter section">
+      <div class="container text-center" data-aos="fade-up">
+        <h2>Subscribe to our Newsletter</h2>
+        <p>Get the latest updates about our research and new innovations.</p>
+
+        <form name="newsletter" method="POST" data-netlify="true" class="newsletter-form">
+          <input type="hidden" name="form-name" value="newsletter">
+
+          <div class="newsletter-input d-flex justify-content-center mt-3">
+            <input type="email" name="email" class="form-control w-50" placeholder="Enter your email" required>
+            <button type="submit" class="btn btn-primary ms-2">
+              Subscribe
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+
 
   </main>
 
