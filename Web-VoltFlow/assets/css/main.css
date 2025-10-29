@@ -1048,6 +1048,12 @@ section,
   top: calc(50% - 47px);
 }
 
+.reference-text {
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+
 
 /*--------------------------------------------------------------
 # Milestones Section
